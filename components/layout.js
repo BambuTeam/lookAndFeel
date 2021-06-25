@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import { Link as ScrollLink } from "react-scroll";
+import dinamic from 'next/dynamic'
 
 import AppleTouch from "@images/favicons/apple-touch-icon.png";
 import Fevicon32 from "@images/favicons/favicon-32x32.png";
@@ -8,7 +9,7 @@ import Fevicon16 from "@images/favicons/favicon-16x16.png";
 
 const Layout = ({ pageTitle, children }) => {
   const [scrollTop, setScrollTop] = useState(false);
-
+  
   const handleScrollTop = () => {
     if (window.scrollY > 70) {
       setScrollTop(true);
@@ -22,7 +23,7 @@ const Layout = ({ pageTitle, children }) => {
     return () => {
       window.removeEventListener("scroll", handleScrollTop);
     };
-  });
+  },[]);
 
   return (
     <div>

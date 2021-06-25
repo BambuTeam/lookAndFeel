@@ -23,12 +23,12 @@ const Video = () => {
           <h2>{title}</h2>
         </div>
       </div>
-      <ModalVideo
+     {/*  <ModalVideo
         channel="youtube"
         isOpen={open.isOpen}
         videoId={videoID}
         onClose={() => setOpen({ isOpen: false })}
-      />
+      /> */}
     </section>
   );
 };
