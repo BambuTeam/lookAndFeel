@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
-import logo from "@images/logo-1-1.png";
+import logo from "@images/logobambu.svg";
 import NavLinksInner from "./nav-links-inner";
 
 const HeaderInner = () => {
