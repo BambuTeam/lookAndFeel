@@ -5,7 +5,7 @@ import { VIDEO_DATA } from "@data/index";
 const Video = () => {
   const [open, setOpen] = useState({
     isOpen: false
-  });
+  },[]);
   const openModal = (e) => {
     e.preventDefault();
     setOpen({

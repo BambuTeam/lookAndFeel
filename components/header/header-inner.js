@@ -21,7 +21,7 @@ const HeaderInner = () => {
       mobileMenu();
       window.removeEventListener("scroll", handleScroll);
     };
-  });
+  },[]);
 
   const mobileMenu = () => {
     document.querySelectorAll(".side-menu__toggler").forEach((btn) => {
