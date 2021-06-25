@@ -4,7 +4,8 @@ import bgShape1 from "@images/banner/banner-shape-1-1.png";
 import bgShape2 from "@images/banner/banner-shape-1-2.png";
 import bannerBG from "@images/banner/banner-bg-1.png";
 import bannerShape1 from "@images/shapes/banner-1-1.png";
-import bannerShape2 from "@images/banner/banner-shape-1-4.png";
+import bamboo from "@images/banner/bamboo.svg";
+
 import image from "@images/banner/banner-img-1.png";
 
 const Banner = () => {
@@ -42,7 +43,7 @@ const Banner = () => {
               <img src={bannerShape1} className="banner-image__curvs" alt="" />
               <div
                 className="banner-bg"
-                style={{ backgroundImage: `url(${bannerShape2})` }}
+                style={{ backgroundImage: `url(${bamboo})` }}
               ></div>
               <img src={image} alt="Banner-img" />
               <div className="banner-icon-1">
