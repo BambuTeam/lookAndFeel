@@ -8,6 +8,8 @@ import bamboo from "@images/banner/banner-shape-1-4.png";
 
 import image from "@images/banner/phone.png";
 
+import dev from "@images/icovector/devtext.png";
+
 const Banner = () => {
   return (
     <section className="banner-one" id="home">
@@ -29,11 +31,9 @@ const Banner = () => {
               </h1>
               
               <p>
-              Más alla de la suerte.<br />
-
-              Un factor común entre muchos negocios es: Tener bambú de la suerte en los espacios de trabajo.<br />
-
-              Bajo esta premisa, que todos conocemos. Adoptamos el concepto de los 8 tallos del bambú en la cultura oriental, que representa: Crecimiento, prosperidad, éxito.
+              <p>Más alla de la suerte.</p>
+              <p>Un factor común entre muchos negocios es: Tener bambú de la suerte en los espacios de trabajo.</p>
+              <p>Bajo esta premisa, que todos conocemos. Adoptamos el concepto de los 8 tallos del bambú en la cultura oriental, que representa: Crecimiento, prosperidad, éxito.</p>
               </p>
               <a href="#" className="thm-btn">
                 <span>Discover More</span>
@@ -49,7 +49,7 @@ const Banner = () => {
               ></div>
               <img src={image} alt="Banner-img" />
               <div className="banner-icon-1">
-                <i className="piloz-lamp"></i>
+                <i><img src={dev} alt="Banner-img" /></i>
               </div>
               <div className="banner-icon-2">
                 <i className="piloz-linked"></i>
