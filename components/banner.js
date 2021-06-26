@@ -9,6 +9,12 @@ import bamboo from "@images/banner/banner-shape-1-4.png";
 import image from "@images/banner/phone.png";
 
 import dev from "@images/icovector/devtext.png";
+import hogar from "@images/icovector/tuhogar.png";
+import koitext from "@images/icovector/koitext.png";
+
+
+import instagram from "@images/icovector/instagram.svg";
+
 
 const Banner = () => {
   return (
@@ -35,9 +41,12 @@ const Banner = () => {
               <p>Un factor común entre muchos negocios es: Tener bambú de la suerte en los espacios de trabajo.</p>
               <p>Bajo esta premisa, que todos conocemos. Adoptamos el concepto de los 8 tallos del bambú en la cultura oriental, que representa: Crecimiento, prosperidad, éxito.</p>
               </p>
-              <a href="#" className="thm-btn">
+              <div className="ico-instagram">
+               <a href="https://www.instagram.com/bambu.team/" target="_blank"><img src={instagram} alt="Banner-img" /></a> 
+              </div>
+              {/* <a href="#" className="thm-btn">
                 <span>Discover More</span>
-              </a>
+              </a> */}
             </div>
           </Col>
           <Col xl={6} lg={6}>
@@ -52,10 +61,10 @@ const Banner = () => {
                 <i><img src={dev} alt="Banner-img" /></i>
               </div>
               <div className="banner-icon-2">
-                <i className="piloz-linked"></i>
+                <i><img src={hogar} alt="Banner-img" /></i>
               </div>
               <div className="banner-icon-3">
-                <i className="piloz-human-resources"></i>
+                <i ><img src={koitext} alt="Banner-img" /></i>
               </div>
             </div>
           </Col>

@@ -1495,6 +1495,7 @@ li {
   position: relative;
   display: block;
   max-width: 370px;
+  margin-right: 50px;
   float: right;
   width: 100%;
   padding-top: 105px;
@@ -1521,7 +1522,7 @@ li {
   height: 102px;
   width: 102px;
   border-radius: 50px;
-  background: #ffffff;
+  background: transparent;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3754,4 +3755,8 @@ li {
 
 .sidebar__tags-list-item a:hover {
   color: var(--thm-black);
+}
+
+.ico-instagram{
+  max-width: 13%;
 }
