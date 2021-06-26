@@ -10,17 +10,17 @@ const NavLinksInner = () => {
     <ul className="main-nav__navigation-box one-page-scroll-menu">
       <li>
         <Link href="/">
-          <a>Home</a>
+          <a>¿Qué hacemos?</a>
         </Link>
       </li>
       <li>
         <Link href="/#features">
-          <a>Features</a>
+          <a>Lo que amamos</a>
         </Link>
       </li>
       <li>
         <Link href="/#pricing">
-          <a>Pricing</a>
+          <a>Mitosis</a>
         </Link>
       </li>
       <li>

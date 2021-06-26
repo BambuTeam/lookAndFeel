@@ -2,36 +2,38 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import bgShape1 from "@images/banner/banner-shape-1-1.png";
 import bgShape2 from "@images/banner/banner-shape-1-2.png";
-import bannerBG from "@images/banner/banner-bg-1.png";
-import bannerShape1 from "@images/shapes/banner-1-1.png";
-import bamboo from "@images/banner/bamboo.svg";
+/* import bannerBG from "@images/banner/banner-bg-1.png"; */
+import bannerShape1 from "@images/shapes/bamboo.svg";
+import bamboo from "@images/banner/banner-shape-1-4.png";
 
-import image from "@images/banner/banner-img-1.png";
+import image from "@images/banner/phone.png";
 
 const Banner = () => {
   return (
     <section className="banner-one" id="home">
       <img src={bgShape1} alt="Banner-Shape-1" className="banner-shape-1" />
       <img src={bgShape2} alt="Banner-Shape-2" className="banner-shape-2" />
-      <div
+      {/* <div
         className="banner-one__bg"
         style={{ backgroundImage: `url(${bannerBG})` }}
-      ></div>
+      ></div> */}
       <Container>
         <Row>
           <Col xl={6} lg={6}>
             <div className="banner-one__content">
               <h3>
-                We help to
-                <br />
-                achieve big
-                <br />
-                goals
+                CRECIMIENTO
               </h3>
+              <h1>
+                MUTUO
+              </h1>
+              
               <p>
-                Nulla facilisi. Proin felis neque, suscipit egestas erat a tin-{" "}
-                <br />
-                cidunt finibus magna consectetur lacus.
+              Más alla de la suerte.<br />
+
+              Un factor común entre muchos negocios es: Tener bambú de la suerte en los espacios de trabajo.<br />
+
+              Bajo esta premisa, que todos conocemos. Adoptamos el concepto de los 8 tallos del bambú en la cultura oriental, que representa: Crecimiento, prosperidad, éxito.
               </p>
               <a href="#" className="thm-btn">
                 <span>Discover More</span>

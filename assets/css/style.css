@@ -35,6 +35,15 @@
 font-family: 'Barlow', sans-serif;
 font-family: 'Prata', serif;
 */
+@font-face {
+  font-family: Morganite-ligth;
+  src: url(../fonts/Morganite/Morganite-Light.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-bold;
+  src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
 
 :root {
   --thm-font: "Barlow", sans-serif;
@@ -97,7 +106,8 @@ li {
   vertical-align: middle;
   border: none;
   outline: none;
-  border-radius: 32px;
+  border-radius: 10px;
+  border: solid 1px #80e1fa;
   font-size: 16px;
   font-weight: bold;
   color: #fff;
@@ -105,12 +115,14 @@ li {
   line-height: 64px;
   position: relative;
   transition: all 0.4s ease;
-  background-color: var(--thm-base);
+  background-color: transparent;
   overflow: hidden;
 }
 
 .thm-btn::after,
 .thm-btn:before {
+  border: solid 1px #80e1fa;
+  border-radius: 10px;
   content: "";
   position: absolute;
   top: 0;
@@ -118,7 +130,7 @@ li {
   right: 0;
   bottom: 0;
   border-radius: 0px;
-  background-color: var(--thm-base);
+  background-color: transparent;
   transform: scale(2, 2);
   -webkit-transform-origin: left center;
   transform-origin: right center;
@@ -127,7 +139,9 @@ li {
 }
 .thm-btn::before {
   transform: scale(1, 1);
-  background-color: var(--thm-black);
+  border: solid 1px #80e1fa;
+  border-radius: 10px;
+  background-color: transparent;
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
@@ -756,6 +770,7 @@ li {
 .site-header-one {
   position: relative;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: solid #80e1fa 2px;
 }
 
 .site-header-one .container-fluid {
@@ -818,7 +833,7 @@ li {
 .main-nav__main-navigation .main-nav__navigation-box > li > a {
   font-size: 17px;
   font-weight: 500;
-  color: #8d8d8d;
+  color: #fefefe;
   display: block;
   -webkit-transition: 500ms;
   cursor: pointer;
@@ -988,7 +1003,7 @@ li {
   left: 0;
   width: 100%;
   z-index: 999;
-  background-color: #ffffff;
+  background-color: transparent;
   box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.06);
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1439,22 +1454,33 @@ li {
 }
 
 .banner-one__content {
-  padding-top: 198px;
+  padding-top: 108px;
 }
 
 .banner-one__content h3 {
-  color: var(--thm-black);
-  font-size: 90px;
+  font-size-adjust: 2;
+  color: #80e1fa;
+  font-size: 130px !important;
   font-weight: 400;
   line-height: 105px;
   margin: 0;
-  letter-spacing: -0.02em;
-  font-family: var(--heading-font);
+  letter-spacing: 15px;
+  font-family: Morganite-ligth;
+}
+
+.banner-one__content h1 {
+  color: #80e1fa;
+  font-size: 90px !important;
+  font-weight: 400;
+  line-height: 105px;
+  margin: 0;
+  letter-spacing: 15px;
+  font-family: Montserrat-bold;
 }
 
 .banner-one__content p {
-  color: #8d8d8d;
-  font-size: 18px;
+  color: #fefefe !important;
+  font-size: 15px;
   margin: 35px 0px 44px;
 }
 
