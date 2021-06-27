@@ -10,7 +10,7 @@ const NavLinks = () => {
     <ul className="main-nav__navigation-box one-page-scroll-menu">
       <li>
         <Link href="/">
-          <a>Home</a>
+          <a>¿QUÉ HACEMOS?</a>
         </Link>
       </li>
       <li>
@@ -22,7 +22,7 @@ const NavLinks = () => {
           offset={-70}
           duration={500}
         >
-          Features
+          LO QUE AMAMOS
         </ScrollLink>
       </li>
       <li>
@@ -34,60 +34,12 @@ const NavLinks = () => {
           offset={-70}
           duration={500}
         >
-          Pricing
+          MITOSIS
         </ScrollLink>
       </li>
-      <li>
-        <ScrollLink
-          activeClass="current"
-          to="testimonials"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          Testimonials
-        </ScrollLink>
-      </li>
-      <li>
-        <ScrollLink
-          activeClass="current"
-          to="screens"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          Screens
-        </ScrollLink>
-      </li>
-      <li className="dropdown">
-        <ScrollLink
-          activeClass="current"
-          to="blog"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          News
-        </ScrollLink>
-        <button className="dropdown-btn" onClick={handleDropdownStatus}>
-          <i className="fa fa-angle-right"></i>
-        </button>
-        <ul className="dropdown-list">
-          <li>
-            <Link href="/blog">
-              <a>News</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/blog-details">
-              <a>News Details</a>
-            </Link>
-          </li>
-        </ul>
-      </li>
+      
+      
+      
     </ul>
   );
 };

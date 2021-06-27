@@ -49,7 +49,7 @@ const HeaderInner = () => {
         <Container fluid>
           <div className="site-header-one__logo">
             <a href="/">
-              <img src={logo} width="129" alt="" />
+              <img src={logo} width="189" alt="" />
             </a>
             <span className="side-menu__toggler">
               <i className="fa fa-bars"></i>
